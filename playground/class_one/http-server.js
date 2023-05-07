@@ -38,6 +38,8 @@ const url = require("url");
 const server = http.createServer((req, res) => {
   // Parse the request URL
   const parsedUrl = url.parse(req.url, true);
+  //? true because if we dont specify this it responds with a string 
+  //? if we give the second param it givesobject.
 
   // Get the pathname from the parsed URL
   const pathname = parsedUrl.pathname;
