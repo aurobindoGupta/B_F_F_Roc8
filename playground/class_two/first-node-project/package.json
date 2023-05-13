@@ -7,10 +7,18 @@
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin":{
+    "parrotLang":"index.js"
+  },
   "keywords": [
     "node",
     "example"
   ],
   "author": "Aurobindo Gupta",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@vitalets/google-translate-api": "^9.2.0",
+    "commander": "^10.0.1",
+    "lodash": "^4.17.21"
+  }
 }

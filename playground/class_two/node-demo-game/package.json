@@ -1,0 +1,19 @@
+{
+  "name": "demo-game",
+  "version": "1.0.0",
+  "description": "demo game exercise",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "game",
+    "demo"
+  ],
+  "author": "Auro",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^10.0.1",
+    "inquirer": "^8.2.5"
+  }
+}
