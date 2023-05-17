@@ -1,0 +1,1 @@
+npx auro-cli-chatgpt ---> Play
