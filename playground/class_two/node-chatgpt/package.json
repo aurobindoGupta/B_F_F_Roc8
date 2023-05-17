@@ -1,0 +1,21 @@
+{
+  "name": "auro-cli-chatgpt",
+  "version": "2.0.1",
+  "description": "Just playing around",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+   "bin": {
+    "aurochat": "index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "inquirer": "^8.2.5",
+    "openai": "^3.2.1"
+  }
+}
