@@ -52,13 +52,12 @@ function getClientInput() {
 })();
 
 async function getChatGptRes(chatArr) {
-  
   try {
     const completion = await openai.createChatCompletion({
       model: "gpt-3.5-turbo",
       messages: chatArr,
     });
-    
+
     return completion.data.choices[0].message;
   } catch {
     (err) => console.error("chatgpt response", err);
