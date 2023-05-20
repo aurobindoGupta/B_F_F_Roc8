@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>{{title}}</title>
+      <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"
+    />
+  </head>
+  <body>
+    <h1>{{title}}</h1>
+    <h2>
+     Sujjestions and reviews
+    </h2>
+
+    <table>
+        <tr>
+            <th>Book Name</th>
+            <th>Author</th>
+            <th>Rating [10]</th>
+            <th>Review</th>       
+        </tr>
+    {{#each activities}}
+    <tr>
+        <td>
+        {{this.properties.Name.title.0.text.content}}
+        </td>
+        <td>
+            {{this.properties.Author.rich_text.0.text.content}}
+        </td>
+        <td>{{this.properties.Rating.number}}</td>
+        <td>
+            {{this.properties.Review.rich_text.0.text.content}}
+        </td>
+    </tr>
+    
+    {{/each}}
+    </table>
+
+     
+  </body>
+</html>
