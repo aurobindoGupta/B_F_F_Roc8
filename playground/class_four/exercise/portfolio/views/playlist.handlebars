@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>{{title}}</title>
+      <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"
+    />
+  </head>
+  <body>
+    <h1>{{title}}</h1>
+    <h3>Portfolio</h3>
+    <h2>
+     Spotify playlist
+    </h2>
+    {{#each activities}}
+
+      <p>
+
+        {{this.name}}
+
+        -
+        {{this.type}}
+        -
+        {{this.id}}
+      </p>
+      <hr />
+
+    {{/each}}
+  </body>
+</html>

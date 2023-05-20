@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>{{title}}</title>
+      <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"
+    />
+  </head>
+  <body>
+    <h1>{{title}}</h1>
+    <h2>
+     Playlist Tracks
+    </h2>
+    {{#each activities}}
+
+      <p>
+
+        {{this.track.name}}
+
+        -
+        {{#each this.track.album.artists}}
+         {{this.name}};
+        {{/each}}
+        -
+        Release Date:{{this.track.album.release_date}}
+      </p>
+      <hr />
+
+    {{/each}}
+  </body>
+</html>
