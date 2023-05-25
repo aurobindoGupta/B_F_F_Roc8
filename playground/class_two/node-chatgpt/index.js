@@ -9,7 +9,7 @@ const configuration = new Configuration({
 });
 const openai = new OpenAIApi(configuration);
 
-console.log(process.env.OPENAI_API_KEY);
+// *console.log(process.env.OPENAI_API_KEY);
 const history = [];
 
 function getClientInput() {
