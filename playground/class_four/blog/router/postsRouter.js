@@ -2,7 +2,10 @@ const express = require("express");
 const fs = require("fs");
 const path = require("path");
 const { posts } = require("../data/postsData");
+
+
 const postsRouter = express.Router();
+
 
 postsRouter.get("/", (req, res) => {
   res.json(posts);
