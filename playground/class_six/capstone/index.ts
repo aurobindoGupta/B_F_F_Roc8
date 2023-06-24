@@ -95,6 +95,6 @@ app.use("/api/students", studentsRouter);
 
 app.use("/api/admin", adminRouter);
 
-app.listen(3001, () => {
+app.listen(3000, () => {
   console.log("Express ServerStarted");
 });
