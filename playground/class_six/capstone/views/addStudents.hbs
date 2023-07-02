@@ -1,12 +1,12 @@
 <div class="container">
   <h1>Student form</h1>
   <form id="student-form" action="{{action}}" method="{{method}}" _method="{{method}}">
-    <input type="hidden" name="teacherId" value="1"/>
+    <input type="hidden" name="teacher_id" value="1"/>
     <label for="fname">First name:</label>
-    <input type="text" id="fname" name="firstName" value="{{student.firstName}}" placeholder="First Name" required />
+    <input type="text" id="fname" name="first_name" value="{{student.firstName}}" placeholder="First Name" required />
     <br />
     <label for="lname">Last name:</label>
-    <input type="text" id="lname" name="lastName" value="{{student.lastName}}" placeholder="Last Name" required />
+    <input type="text" id="lname" name="last_name" value="{{student.lastName}}" placeholder="Last Name" required />
     <br />
     <label for="student-age">Age:</label>
     <input type="text" id="student-age" name="age" value="{{student.age}}" placeholder="Age in years" required />

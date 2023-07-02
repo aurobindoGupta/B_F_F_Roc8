@@ -11,3 +11,4 @@ export const compareHash = (plainText: string, existingHash: string) => {
   const result = bcrypt.compareSync(plainText, existingHash);
   return result;
 };
+console.log(hash('123456'));
